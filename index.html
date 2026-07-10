@@ -1,110 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Live</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="dashboard">
 
-    <!-- HEADER -->
-    <header class="header">
+<header class="header">
 
-        <div class="logo">
-            📈 MARKET LIVE
-        </div>
+<div class="logo">
+📈 MARKET LIVE
+</div>
 
-        <div class="clock" id="clock">
-            Loading...
-        </div>
+<div id="clock" class="clock">
+Loading...
+</div>
 
-    </header>
+</header>
 
-    <!-- MAIN -->
-    <main class="main">
+<main class="main">
 
-        <!-- LEFT PANEL -->
-        <aside class="left-panel">
+<aside class="left-panel">
 
-            <h2>Market Watch</h2>
+<h2>Crypto Market</h2>
 
-            <div class="market-item">
-                BTC
-                <span>Loading...</span>
-            </div>
+<div id="crypto-list"></div>
 
-            <div class="market-item">
-                ETH
-                <span>Loading...</span>
-            </div>
+</aside>
 
-            <div class="market-item">
-                NASDAQ
-                <span>Loading...</span>
-            </div>
+<section class="center-panel">
 
-            <div class="market-item">
-                S&amp;P 500
-                <span>Loading...</span>
-            </div>
+<div class="tradingview-widget-container" style="width:95%;height:90%;">
+<div id="tradingview_chart" style="height:100%;"></div>
+</div>
 
-            <div class="market-item">
-                GOLD
-                <span>Loading...</span>
-            </div>
+</section>
 
-            <div class="market-item">
-                OIL
-                <span>Loading...</span>
-            </div>
+<aside class="right-panel">
 
-        </aside>
+<h2>Breaking News</h2>
 
-        <!-- CENTER PANEL -->
-        <section class="center-panel">
+<ul>
 
-            <div class="tradingview-widget-container" style="width:95%;height:90%;">
+<li>Market dashboard online</li>
+<li>Waiting for live news...</li>
+<li>Waiting for live news...</li>
+<li>Waiting for live news...</li>
+<li>Waiting for live news...</li>
 
-                <div id="tradingview_chart" style="height:100%;"></div>
+</ul>
 
-            </div>
+</aside>
 
-        </section>
+</main>
 
-        <!-- RIGHT PANEL -->
-        <aside class="right-panel">
+<div class="ticker">
 
-            <h2>Breaking News</h2>
+<div class="ticker-content">
 
-            <ul>
+LIVE MARKET • BITCOIN • ETHEREUM • SOLANA • XRP • CARDANO • NASDAQ • GOLD • OIL • FOREX
 
-                <li>Waiting for news...</li>
-                <li>Waiting for news...</li>
-                <li>Waiting for news...</li>
-                <li>Waiting for news...</li>
-                <li>Waiting for news...</li>
+</div>
 
-            </ul>
-
-        </aside>
-
-    </main>
-
-    <!-- TICKER -->
-
-    <div class="ticker">
-
-        <div class="ticker-content">
-
-            MARKET LIVE • STOCKS • CRYPTO • FOREX • GOLD • NASDAQ • S&P 500 • BITCOIN • ETHEREUM • OIL • MARKET LIVE • STOCKS • CRYPTO • FOREX
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -114,29 +78,16 @@
 
 new TradingView.widget({
 
-    "autosize": true,
-
-    "symbol": "NASDAQ:AAPL",
-
-    "interval": "15",
-
-    "timezone": "America/New_York",
-
-    "theme": "dark",
-
-    "style": "1",
-
-    "locale": "en",
-
-    "toolbar_bg": "#131722",
-
-    "enable_publishing": false,
-
-    "hide_top_toolbar": false,
-
-    "allow_symbol_change": true,
-
-    "container_id": "tradingview_chart"
+autosize:true,
+symbol:"BINANCE:BTCUSDT",
+interval:"15",
+timezone:"America/New_York",
+theme:"dark",
+style:"1",
+locale:"en",
+toolbar_bg:"#131722",
+allow_symbol_change:true,
+container_id:"tradingview_chart"
 
 });
 
