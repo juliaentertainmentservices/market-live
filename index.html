@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Live</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Live</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<header>
-    <div class="logo">📈 MARKET LIVE</div>
-    <div id="clock">UTC --:--:--</div>
-</header>
+<div class="dashboard">
 
-<div class="layout">
+    <!-- HEADER -->
+    <header class="header">
 
-    <aside>
-        <h3>Markets</h3>
-        <div>Crypto</div>
-        <div>Stocks</div>
-        <div>Forex</div>
-        <div>Commodities</div>
-    </aside>
+        <div class="logo">
+            📈 MARKET LIVE
+        </div>
 
+        <div class="clock" id="clock">
+            Loading...
+        </div>
 
-    <main>
+    </header>
 
-        <section class="cards">
+    <!-- MAIN -->
 
-            <div class="card">
-                <h4>Bitcoin</h4>
-                <p>$104,500</p>
-                <span class="green">+2.3%</span>
+    <main class="main">
+
+        <!-- LEFT PANEL -->
+
+        <aside class="left-panel">
+
+            <h2>Market Watch</h2>
+
+            <div class="market-item">
+                BTC
+                <span>Loading...</span>
             </div>
 
-            <div class="card">
-                <h4>Ethereum</h4>
-                <p>$3,520</p>
-                <span class="green">+1.8%</span>
+            <div class="market-item">
+                ETH
+                <span>Loading...</span>
             </div>
 
-            <div class="card">
-                <h4>S&P 500</h4>
-                <p>6,900</p>
-                <span class="green">+0.4%</span>
+            <div class="market-item">
+                NASDAQ
+                <span>Loading...</span>
+            </div>
+
+            <div class="market-item">
+                S&P 500
+                <span>Loading...</span>
+            </div>
+
+            <div class="market-item">
+                GOLD
+                <span>Loading...</span>
+            </div>
+
+            <div class="market-item">
+                OIL
+                <span>Loading...</span>
+            </div>
+
+        </aside>
+
+        <!-- CENTER -->
+
+        <section class="center-panel">
+
+            <div class="chart-placeholder">
+
+                LIVE CHART
+
             </div>
 
         </section>
 
+        <!-- RIGHT -->
 
-        <section class="chart">
-            <h2>Live Market Chart</h2>
-            <div class="chart-box">
-                CHART AREA
-            </div>
-        </section>
+        <aside class="right-panel">
 
+            <h2>Breaking News</h2>
+
+            <ul>
+
+                <li>Waiting for news...</li>
+                <li>Waiting for news...</li>
+                <li>Waiting for news...</li>
+                <li>Waiting for news...</li>
+                <li>Waiting for news...</li>
+
+            </ul>
+
+        </aside>
 
     </main>
 
+    <!-- TICKER -->
 
-    <aside class="news">
+    <div class="ticker">
 
-        <h3>Market News</h3>
+        <div class="ticker-content">
 
-        <p>• Bitcoin market update</p>
-        <p>• Stock market movement</p>
-        <p>• Global economy</p>
+            MARKET LIVE • STOCKS • CRYPTO • FOREX • GOLD • NASDAQ • S&P 500 • BITCOIN • ETHEREUM • OIL • MARKET LIVE • STOCKS • CRYPTO • FOREX
 
-    </aside>
+        </div>
+
+    </div>
 
 </div>
 
-
-<footer>
-    Market Live Dashboard
-</footer>
-
-
-<script>
-function updateClock(){
-    let now = new Date();
-    document.getElementById("clock").innerHTML =
-    "UTC " + now.toUTCString().split(" ")[4];
-}
-
-setInterval(updateClock,1000);
-updateClock();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
