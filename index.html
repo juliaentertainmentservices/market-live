@@ -1,99 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Live</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="dashboard">
-
-<header class="header">
-
-<div class="logo">
-📈 MARKET LIVE
+<div class="market-item">
+    BTC
+    <span>Loading...</span>
 </div>
 
-<div id="clock" class="clock">
-Loading...
+<div class="market-item">
+    ETH
+    <span>Loading...</span>
 </div>
 
-</header>
-
-<main class="main">
-
-<aside class="left-panel">
-
-<h2>Crypto Market</h2>
-
-<div id="crypto-list"></div>
-
-</aside>
-
-<section class="center-panel">
-
-<div class="tradingview-widget-container" style="width:95%;height:90%;">
-<div id="tradingview_chart" style="height:100%;"></div>
+<div class="market-item">
+    NASDAQ
+    <span>Loading...</span>
 </div>
 
-</section>
-
-<aside class="right-panel">
-
-<h2>Breaking News</h2>
-
-<ul>
-
-<li>Market dashboard online</li>
-<li>Waiting for live news...</li>
-<li>Waiting for live news...</li>
-<li>Waiting for live news...</li>
-<li>Waiting for live news...</li>
-
-</ul>
-
-</aside>
-
-</main>
-
-<div class="ticker">
-
-<div class="ticker-content">
-
-LIVE MARKET • BITCOIN • ETHEREUM • SOLANA • XRP • CARDANO • NASDAQ • GOLD • OIL • FOREX
-
+<div class="market-item">
+    S&amp;P 500
+    <span>Loading...</span>
 </div>
 
+<div class="market-item">
+    GOLD
+    <span>Loading...</span>
 </div>
 
+<div class="market-item">
+    OIL
+    <span>Loading...</span>
 </div>
-
-<script src="https://s3.tradingview.com/tv.js"></script>
-
-<script>
-
-new TradingView.widget({
-
-autosize:true,
-symbol:"BINANCE:BTCUSDT",
-interval:"15",
-timezone:"America/New_York",
-theme:"dark",
-style:"1",
-locale:"en",
-toolbar_bg:"#131722",
-allow_symbol_change:true,
-container_id:"tradingview_chart"
-
-});
-
-</script>
-
-<script src="script.js"></script>
-
-</body>
-</html>
