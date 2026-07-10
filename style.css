@@ -1,212 +1,27 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-
-    background:#0d1117;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-    overflow:hidden;
-
-}
-
-.dashboard{
-
-    display:flex;
-    flex-direction:column;
-    height:100vh;
-
-}
-
-.header{
-
-    height:70px;
-
-    background:#161b22;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:0 30px;
-
-    border-bottom:2px solid #00d26a;
-
-}
-
-.logo{
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    color:#00ff88;
-
-}
-
-.clock{
-
-    font-size:22px;
-
-}
-
-.main{
-
-    flex:1;
-
-    display:grid;
-
-    grid-template-columns:260px 1fr 300px;
-
-}
-
-.left-panel{
-
-    background:#111827;
-
-    padding:20px;
-
-    border-right:1px solid #333;
-
-}
-
-.left-panel h2{
-
-    margin-bottom:20px;
-
-}
-
 .market-item{
 
-    display:flex;
+display:flex;
 
-    justify-content:space-between;
+justify-content:space-between;
 
-    margin-bottom:18px;
+align-items:center;
 
-    padding:12px;
+margin-bottom:12px;
 
-    background:#1f2937;
+padding:12px;
 
-    border-radius:8px;
+background:#1f2937;
 
-}
+border-radius:8px;
 
-.center-panel{
+font-size:15px;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:#0b1220;
+transition:.3s;
 
 }
 
-.chart-placeholder{
+.market-item:hover{
 
-    width:95%;
-
-    height:90%;
-
-    border:3px dashed #00ff88;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:48px;
-
-    color:#00ff88;
-
-}
-
-.right-panel{
-
-    background:#111827;
-
-    padding:20px;
-
-    border-left:1px solid #333;
-
-}
-
-.right-panel h2{
-
-    margin-bottom:20px;
-
-}
-
-.right-panel ul{
-
-    list-style:none;
-
-}
-
-.right-panel li{
-
-    margin-bottom:18px;
-
-    padding:12px;
-
-    background:#1f2937;
-
-    border-radius:8px;
-
-}
-
-.ticker{
-
-    height:42px;
-
-    background:#00d26a;
-
-    overflow:hidden;
-
-    white-space:nowrap;
-
-    display:flex;
-
-    align-items:center;
-
-}
-
-.ticker-content{
-
-    display:inline-block;
-
-    color:black;
-
-    font-weight:bold;
-
-    font-size:20px;
-
-    padding-left:100%;
-
-    animation:scroll 30s linear infinite;
-
-}
-
-@keyframes scroll{
-
-    from{
-
-        transform:translateX(0);
-
-    }
-
-    to{
-
-        transform:translateX(-100%);
-
-    }
+background:#263445;
 
 }
