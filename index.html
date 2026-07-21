@@ -1,1 +1,100 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Live</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header class="top-bar">
+      <div class="brand">MARKET LIVE</div>
+      <div class="market-status">MARKET OPEN</div>
+      <div id="clock">09:45:18 AM EST</div>
+    </header>
+
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>S&amp;P 500 ▲ +0.72%</span>
+        <span>NASDAQ ▲ +1.05%</span>
+        <span>DOW JONES ▲ +0.41%</span>
+        <span>GOLD ▲ +0.32%</span>
+        <span>OIL ▼ -0.18%</span>
+        <span>BITCOIN ▲ +2.10%</span>
+      </div>
+    </div>
+
+    <main class="grid">
+      <section class="panel overview">
+        <h2>Market Overview</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="label">S&amp;P 500</div>
+            <div class="value">5,982.44</div>
+            <div class="change positive">▲ 0.72%</div>
+          </div>
+          <div class="card">
+            <div class="label">NASDAQ</div>
+            <div class="value">20,532.18</div>
+            <div class="change positive">▲ 1.05%</div>
+          </div>
+          <div class="card">
+            <div class="label">DOW JONES</div>
+            <div class="value">45,781.20</div>
+            <div class="change positive">▲ 0.41%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel news">
+        <h2>Breaking News</h2>
+        <ul>
+          <li>Technology stocks continue to gain momentum.</li>
+          <li>Markets await upcoming inflation data.</li>
+          <li>Investors monitor central bank commentary.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Crypto</h2>
+        <div class="row"><span>Bitcoin</span><span class="positive">▲ 2.10%</span></div>
+        <div class="row"><span>Ethereum</span><span class="positive">▲ 1.42%</span></div>
+        <div class="row"><span>Solana</span><span class="positive">▲ 3.08%</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>World Markets</h2>
+        <div class="row"><span>Nikkei 225</span><span class="positive">▲ 0.58%</span></div>
+        <div class="row"><span>FTSE 100</span><span class="positive">▲ 0.21%</span></div>
+        <div class="row"><span>DAX</span><span class="negative">▼ 0.14%</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>Economic Calendar</h2>
+        <div class="event">
+          <span>CPI Release</span>
+          <span>8:30 AM</span>
+        </div>
+        <div class="event">
+          <span>Fed Speech</span>
+          <span>2:00 PM</span>
+        </div>
+        <div class="event">
+          <span>Retail Sales</span>
+          <span>10:00 AM</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-bar">
+      <div class="bottom-track">
+        MARKET LIVE • Financial information dashboard • 24/7 streaming concept • Market data displayed for informational purposes •
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
